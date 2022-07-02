@@ -1,0 +1,73 @@
+.number>div{
+    width: 90px;
+    height: 90px;background-color: rgb(71, 200, 220);
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+}
+.number>div:hover{
+    cursor: pointer;
+}
+.number{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    margin: 30px auto;
+    width: 300px;
+    height: 400px;
+    
+}
+.operator{
+    font-size: 40px;
+    width: max-content;
+    height: 300px;
+    position: absolute;
+    left:  250px;
+    top: 29px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.operator>div{
+    width: 90px;
+    height: 90px;
+    background-color: #eab676;
+    text-align: center;
+    padding: 20px;
+}
+.operator>div:hover{
+    cursor: pointer;
+}
+.display{
+    width: 300px;
+    height: 40px;
+    border: black solid 2px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 30px;
+    padding: 15px;
+    box-sizing: unset;
+}
+.equr{
+    width: 200px;
+    text-align: center  ;
+    height: max-content;
+    font-size: 70px;
+    background-color:rgb(184, 75, 120);
+    position: absolute;
+    padding: 0px 20px;  
+    top: 340.5px;
+    right: 360px;    
+            
+}
+.equr:hover{
+    cursor: pointer;
+}
+
+*{
+    box-sizing: border-box;  
+    border-radius: 20px ;
+    -webkit-user-select: none;
+}
