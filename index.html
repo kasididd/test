@@ -4,20 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Market</title>
     <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
 </head>
-<body>
-    <div class="contianaer">
-        <div class="top">
-            <div class="contack">0970828869</div>
-            <div class="nav">
-                <div class="banner">WebSmart</div>
-                <div class="icon"></div>
-                <div class="menu"></div>
-            </div>
-        </div>
-        <div class="content"></div>
-    </div>
+<body onkeydown="kuy(event)">
+     <div class="container">
+        <div class="number">
+            <div id="number" onclick="getValue(this)" class="number1">1</div>
+            <div id="number" onclick="getValue(this)" class="number2">2</div>
+            <div id="number" onclick="getValue(this)" class="number3">3</div>
+            <div id="number" onclick="getValue(this)" class="number4">4</div>
+            <div id="number" onclick="getValue(this)" class="number5">5</div>
+            <div id="number" onclick="getValue(this)" class="number6">6</div>
+            <div id="number" onclick="getValue(this)" class="number7">7</div>
+            <div id="number" onclick="getValue(this)" class="number8">8</div>
+            <div id="number" onclick="getValue(this)" class="number9">9</div>
+            <div id="number" onclick="getValue(this)" class="number0">0</div>
+         </div>
+         <div class="equr" onclick="operatorFunction()">=</div>
+         <div class="operator">
+            <div onclick="getVal1and2(this.innerHTML)" class="add">+</div>
+            <div onclick="getVal1and2(this.innerHTML)" class="sub">-</div>
+            <div onclick="getVal1and2(this.innerHTML)" class="multiple">x</div>
+            <div onclick="getVal1and2(this.innerHTML)" class="divide">/</div>
+         </div>
+         <div class="display"></div>
+        <script src="./index.js"></script>
+
+     </div>
 </body>
 </html>
